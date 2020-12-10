@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>KinNabi</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header-logo">
+			KinNabi
+		</div>
+		<div class="header-list">
+			<ul>
+				<li onclick="unko6()">
+					カロリー
+				</li>
+				<li onclick="unko6()">
+					種目
+				</li>
+				<li onclick="unko6()">
+					おすすめYoutuber
+				</li>
+				<li onclick="unko6()">
+					栄養
+				</li>
+			</ul>
+		</div>
+	</div>
+	<h1>
+		減量期のカロリーとマクロ計算
+	</h1>
+		<p>
+			<ul>
+				<li>身長</li>
+				<input id="high" type="text">cm
+				<li>体重</li>
+				<input id="weight" type="text">kg
+				<li>年齢</li>
+				<input id="old" type="text">歳
+				<li>一ヶ月で何キロ脂肪を落としたいか</li>
+				<input id="sibou" type="text">kg
+			</ul>
+	<h2>生活活動強度指数
+			<ul class="seikatu">	
+				<li>1.3（低い）・・・安静時が多い場合。散歩や買物など、１時間程度のゆっくりした歩行のほかは、大半は座った姿勢での読書や勉強、テレビ、音楽鑑賞などをしている場合。	
+				</li>
+				<button onclick="unko1(), unko1m()">確認</button>
+				<li>
+				1.5（やや低い）・・・歩行時間がやや長く、２時間程度の場合。大半が座っている姿勢のままだが、比較的立った姿勢での作業も多い場合。
+				</li>	
+				<button onclick="unko2(), unko2m()">確認</button>
+				
+				<li>
+				1.7（適度）・・・１時間程度のウォーキングやサイクリングなどをしている場合。また、立った姿勢でいることが多く、そのうち１時間程度は農作業など、体に負担のかかる作業をしている場合。	
+				</li>	
+				<button onclick="unko3(), unko3m()">確認</button>
+				
+				<li>
+				1.9（高い）・・・１時間程度、ハードなトレーニングをしていたり、木材の運搬や激しく体に負担のかかる仕事をしていたりする場合。
+				</li>	
+				<button onclick="unko4(), unko4m()">確認</button>
+				
+			</ul>
+	</h2>		
+			
+		</p>
+		<p>
+			あなたの摂取すべきカロリーは<span id="result1"></span>kcalです！
+			<div>
+				タンパク質：<span id="result2"></span>g
+			</div>
+			<div>
+				脂質：<span id="result3"></span>g
+			</div>
+			炭水化物：<span id="result4"></span>g
+		</p>
+		<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
